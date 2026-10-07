@@ -12,6 +12,8 @@ You will be provided with an image file (e.g., target.png, recommended size: 80 
 3. Flatten all coordinates and colors into samples of shape $(N, 2) and (N, 3)$, where $N = H \times W$. 
 4. Shuffle and split the pixels: use **90%** of the pixels for **training** and **10%** for **testing** (evaluating the model's ability to interpolate unseen pixels).
 
+![Q1_reference](Q1_ref.png)
+
 ## (a) Objective function & metric:
 
 Train your neural network by minimizing the sum-of-squares error (SSE) or mean-squared-error (MSE) function.
@@ -37,6 +39,8 @@ Standard MLPs taking raw $(x, y)$ as inputs often suffer from spectral bias (pro
 # Q2 Classification
 
 Implement the neural network for binary classification by using the Ionosphere dataset. There are 34 different features and 2 classes. The last column represents their corresponding labels:“g” for good and “b” for bad. Use 80% of data samples for training and 20% for testing.
+
+![Q2_reference](Q2_ref.png)
 
 ## (a)
 
