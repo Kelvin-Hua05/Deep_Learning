@@ -1,3 +1,5 @@
+build a deep neural network model by using the backpropagation and stochastic gradient descent algorithm. You may design the network architecture by yourself, including the number of hidden layers, the number of hidden units, learning rate, the number of epochs and mini-batch size. Do not use available machine learning or deep learning packages. It means that you cannot use function like ”tf.nn.dense”, ”tf.nn.sigmoid cross entropy with logits” which have been already written.
+
 # Q1 Regression
 
 In this problem, you are asked to implement a neural network to learn an implicit neural representation (INR) of an image. Instead of predicting tabular features, the network will act as a continuous function $f_w(x, y) \rightarrow (r ,g ,b)$  that maps 2D spatial coordinates $(x, y)$ to RGB color values. 
@@ -32,7 +34,7 @@ Show your (1) network architecture (number of hidden layers and neurons), (2) le
 
 Standard MLPs taking raw $(x, y)$ as inputs often suffer from spectral bias (producing blurry images). Compare the reconstruction results between using raw coordinates versus encoded coordinates (e.g., Fourier feature mapping or periodic functions), and explain why encoding recovers fine details. 
 
-# Q2
+# Q2 Classification
 
 Implement the neural network for binary classification by using the Ionosphere dataset. There are 34 different features and 2 classes. The last column represents their corresponding labels:“g” for good and “b” for bad. Use 80% of data samples for training and 20% for testing.
 
