@@ -35,7 +35,7 @@ Show your (1) network architecture (number of hidden layers and neurons), (2) le
 Standard MLPs taking raw $(x, y)$ as inputs often suffer from spectral bias (producing blurry images). Compare the reconstruction results between using raw coordinates versus encoded coordinates (e.g., Fourier feature mapping or periodic functions), and explain why encoding recovers fine details. 
 
 <p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="40%">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
 </p>
 
 # Q2 Classification
@@ -59,5 +59,5 @@ Show your (1) network architecture (number of hidden layers and neurons), (2) le
 Compare the results of choosing different numbers of nodes in the layer before the output layer by plotting the distribution of latent features at different training stage. 
 
 <p align="left">
-  <img src="Q2_ref.png" alt="Q2_reference" width="30%">
+  <img src="Q2_ref.png" alt="Q2_reference" width="45%">
 </p>
