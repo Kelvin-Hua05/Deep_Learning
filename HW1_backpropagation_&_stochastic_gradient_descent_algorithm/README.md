@@ -1,4 +1,4 @@
-# Q1
+# Q1 Regression
 
 In this problem, you are asked to implement a neural network to learn an implicit neural representation (INR) of an image. Instead of predicting tabular features, the network will act as a continuous function $f_w(x, y) \rightarrow (r ,g ,b)$  that maps 2D spatial coordinates $(x, y)$ to RGB color values. 
 
@@ -8,7 +8,7 @@ You will be provided with an image file (e.g., target.png, recommended size: 80 
 1. Normalize the coordinate grid $(x, y)$ such that both $x, y \in [-1, 1]$. 
 2. Normalize the RGB ground-truth values to [0, 1]. 
 3. Flatten all coordinates and colors into samples of shape $(N, 2) and (N, 3)$, where $N = H \times W$. 
-4. Shuffle and split the pixels: use 90% of the pixels for training and 10% for testing (evaluating the model's ability to interpolate unseen pixels).
+4. Shuffle and split the pixels: use **90%** of the pixels for **training** and **10%** for **testing** (evaluating the model's ability to interpolate unseen pixels).
 
 ## (a) Objective function & metric:
 
