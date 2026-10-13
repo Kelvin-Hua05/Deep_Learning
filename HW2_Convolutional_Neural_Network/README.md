@@ -4,7 +4,21 @@ You are allowed to use **high-level** API, such as PyTorch, TensorFlow / Keras, 
 
 In this exercise, you will construct a convolutional neural network (CNN) for image recognition using the MNIST dataset. This dataset is a subset of a larger set available from NIST. The MNIST dataset contains a total of 70,000 images of handwritten digits from 0 to 9 with corresponding labels, of which 55,000 examples are in the training set, 5,000 in the validation set, and 10,000 in the test set. The digits have been size-normalized and centered in a fixed- size image, so you don’t need to do any preprocessing to the images. The picture below is an example of the MNIST data:  
 
-## 
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
+
+You can download the dataset from: [http://yann.lecun.com/exdb/mnist/](<http://yann.lecun.com/exdb/mnist/>), or use the code below:
+
+```python
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = tf.keras.dataset.mnist
+(x_train, y_train), (x_test, ytest) = mnist.load_data()
+```
+
+(*Hint: `train` can be replaced with `test` or `validation`.*)
+
+## 1-1
 
 Please implement a CNN for image recognition using the MNIST dataset. You have to design your network architecture and **analyze** the effect of different stride size and filter size. Also, plot the learning curve, accuracy of training and test sets, and distributions of weights and biases. (The figures shown below are only for example, you should get the results by yourself.)
 
