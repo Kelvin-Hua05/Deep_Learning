@@ -28,18 +28,31 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 
 [https://www.cs.toronto.edu/~kriz/cifar.html](<https://www.cs.toronto.edu/~kriz/cifar.html>)
 
+##
 
+- Implement and train a baseline CNN on the **original CIFAR-10 dataset** (with standard normalization only, without data augmentation or added noise).
+- Show your (1) network architecture, (2) learning curve (loss and accuracy), and (3) accuracy on the test set.
 
+##
 
+- Create two corrupted test sets from the original test data:
+  (1) Gaussian Noise: Add zero-mean Gaussian noise (𝜎 ≈ 0.08 ∼ 0.1).
+  (2) Gaussian Blur: Apply a Gaussian filter (𝜎 ≈ 0.8 ∼ 1.0).
+- Evaluate your Baseline CNN on both corrupted test sets. Report the test accuracies and discuss why performance drops.
 
+##
 
+- Train two additional models:
+  (1) L2 Regularization: Baseline CNN with weight decay / L2 penalty.
+  (2) Data Augmentation: Baseline CNN trained with augmentations (e.g., random crop, horizontal flip, or noise). 
+- Provide a summary table comparing the test accuracies (Clean, Noise, and Blur) of:
+  (1) Baseline CNN
+  (2) L2 Regularization
+  (3) Data Augmentation 
+- Discuss the results (e.g., why certain strategies improve or degrade robustness under different corruptions). 
 
+##
 
-
-
-
-
-
-
-
-
+- Implement Grad-CAM on the last convolutional layer. 
+- Pick at least 2 test samples and visualize a side-by-side comparison for both Baseline and Data Augmented models (including Original Input, Clean+CAM, Noise+CAM, and Blur+CAM): 
+- Discuss whether data augmentation helps the model maintain focus on the target object under noise and blur.
