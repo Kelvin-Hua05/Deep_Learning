@@ -22,18 +22,35 @@ mnist = tf.keras.dataset.mnist
 
 Please implement a CNN for image recognition using the MNIST dataset. You have to design your network architecture and **analyze** the effect of different stride size and filter size. Also, plot the learning curve, accuracy of training and test sets, and distributions of weights and biases. (The figures shown below are only for example, you should get the results by yourself.)
 
-##
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
+
+## 1-2
 
 Show some examples of correctly classified and miss-classified images and **discuss your results**.
 
-##
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
+
+## 1-3
 
 Following 1-2, observe the feature maps from different convolutional layers and describe how a feature map changes with increasing depth.
 
-##
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
+
+## 1-4
 
 Following 1-1, please add L2 regularization to the CNN implemented in 1-1 and **discuss** its effect. 
 
+\[E = -\frac{1}{N}\sum_{n=1}^{N}\sum_{k=1}^{K} y_{nk}\ln t_{nk}+ \alpha \lVert \omega \rVert_2^2\]
+
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
 
 # 2. Robustness and Interpretability on CIFAR-10
 
@@ -42,7 +59,7 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 
 [https://www.cs.toronto.edu/~kriz/cifar.html](<https://www.cs.toronto.edu/~kriz/cifar.html>)
 
-##
+## 2-1
 
 - Implement and train a baseline CNN on the **original CIFAR-10 dataset** (with standard normalization only, without data augmentation or added noise).
 - Show your (1) network architecture, (2) learning curve (loss and accuracy), and (3) accuracy on the test set.
@@ -57,7 +74,7 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 
 - Evaluate your Baseline CNN on both corrupted test sets. Report the test accuracies and discuss why performance drops.
 
-##
+## 2-3
 
 - Train two additional models:
   
@@ -75,8 +92,13 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 
 - Discuss the results (e.g., why certain strategies improve or degrade robustness under different corruptions). 
 
-##
+## 2-4
 
 - Implement Grad-CAM on the last convolutional layer. 
-- Pick at least 2 test samples and visualize a side-by-side comparison for both Baseline and Data Augmented models (including Original Input, Clean+CAM, Noise+CAM, and Blur+CAM): 
+- Pick at least 2 test samples and visualize a side-by-side comparison for both Baseline and Data Augmented models (including Original Input, Clean+CAM, Noise+CAM, and Blur+CAM):
+
+<p align="left">
+  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+</p>
+
 - Discuss whether data augmentation helps the model maintain focus on the target object under noise and blur.
