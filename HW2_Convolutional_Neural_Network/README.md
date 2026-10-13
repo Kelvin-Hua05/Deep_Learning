@@ -56,7 +56,7 @@ $$
 
 # 2. Robustness and Interpretability on CIFAR-10
 
-In this exercise, you will train CNNs on the **CIFAR-10** dataset (32 × 32 × 3, 10 classes) to analyze model robustness against corruptions and inspect feature attribution via Grad-CAM. 
+In this exercise, you will train CNNs on the **CIFAR-10** dataset (32 $\times$ 32 $\times$ 3, 10 classes) to analyze model robustness against corruptions and inspect feature attribution via Grad-CAM. 
 The link where you can get the CIFAR-10 dataset is below and please refer to the website for more information about the dataset.
 
 [https://www.cs.toronto.edu/~kriz/cifar.html](<https://www.cs.toronto.edu/~kriz/cifar.html>)
