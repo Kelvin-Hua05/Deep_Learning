@@ -46,7 +46,9 @@ Following 1-2, observe the feature maps from different convolutional layers and 
 
 Following 1-1, please add L2 regularization to the CNN implemented in 1-1 and **discuss** its effect. 
 
-\[E = -\frac{1}{N}\sum_{n=1}^{N}\sum_{k=1}^{K} y_{nk}\ln t_{nk}+ \alpha \lVert \omega \rVert_2^2\]
+$$
+E = -\frac{1}{N}\sum_{n=1}^{N}\sum_{k=1}^{K} y_{nk}\ln t_{nk}+ \alpha \lVert \omega \rVert_2^2
+$$
 
 <p align="left">
   <img src="Q1_ref.png" alt="Q1_reference" width="50%">
@@ -68,9 +70,9 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 
 - Create two corrupted test sets from the original test data:
 
-  (1) Gaussian Noise: Add zero-mean Gaussian noise (\(\sigma \approx 0.08 \sim 0.1\)).
+  (1) Gaussian Noise: Add zero-mean Gaussian noise ($\sigma \approx 0.08 \sim 0.1\$).
 
-  (2) Gaussian Blur: Apply a Gaussian filter (\(\sigma \approx 0.8 \sim 1.0\)).
+  (2) Gaussian Blur: Apply a Gaussian filter ($\sigma \approx 0.8 \sim 1.0\$).
 
 - Evaluate your Baseline CNN on both corrupted test sets. Report the test accuracies and discuss why performance drops.
 
