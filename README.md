@@ -1,66 +1,97 @@
 # Getting Started with Anaconda
 
-## Start using Anaconda
+A quick-reference guide for installing Anaconda and managing Python environments and packages with `conda`.
 
-1. Install anaconda
+## Table of Contents
 
-2. activate it
+- [Installation and Setup](#installation-and-setup)
+- [Managing Environments](#managing-environments)
+- [Managing Packages](#managing-packages)
+- [Command Cheat Sheet](#command-cheat-sheet)
 
-```bash
-source ~/anaconda3/bin/activate
-#/anaconda3 is the place i installed anaconda
+## Installation and Setup
 
-conda init
-```
+1. Download and install Anaconda from the [official website](https://www.anaconda.com/download).
 
-Then your terminal will look like:
+2. Activate it. Replace `~/anaconda3` with the directory where you installed Anaconda:
 
-```bash
-(base) max@223ubuntu:~/workspace/machineLearning$
-```
+   ```bash
+   source ~/anaconda3/bin/activate
+   conda init
+   ```
 
-Hint: How to leave anaconda?
+3. Restart your terminal. The prompt should now show the active environment:
 
-Simply type
+   ```bash
+   (base) max@223ubuntu:~/workspace/machineLearning$
+   ```
 
-```bash
-conda deactivate
-```
+> **Tip:** To leave the current environment (and return to the plain shell if you are in `base`), run:
+>
+> ```bash
+> conda deactivate
+> ```
 
-## Create an environment for python script
+## Managing Environments
+
+### Create an environment
 
 ```bash
 conda create --name envName python=3.11
 ```
 
-## see all environment created
+### List all environments
 
 ```bash
 conda env list
 ```
 
-## switch to a environment
+### Switch to an environment
 
 ```bash
 conda activate envName
 ```
 
-Then base would turn into envName
+The prompt changes from `(base)` to `(envName)`.
 
-## Installing packages
+### Remove an environment
+
+```bash
+conda env remove --name envName
+```
+
+## Managing Packages
+
+> Make sure the target environment is activated first, or add `--name envName` to the command.
+
+### Install a package
 
 ```bash
 conda install packageName
 ```
 
-## Removing packages
+### List installed packages
+
+```bash
+conda list
+```
+
+### Remove a package
 
 ```bash
 conda remove --name envName packageName
 ```
 
-## Removing environment
+## Command Cheat Sheet
 
-```bash
-conda env remove --name envName
-```
+| Task                     | Command                                      |
+| ------------------------ | -------------------------------------------- |
+| Activate base            | `source ~/anaconda3/bin/activate`            |
+| Initialize shell         | `conda init`                                 |
+| Deactivate environment   | `conda deactivate`                           |
+| Create environment       | `conda create --name envName python=3.11`    |
+| List environments        | `conda env list`                             |
+| Switch environment       | `conda activate envName`                     |
+| Install package          | `conda install packageName`                  |
+| Remove package           | `conda remove --name envName packageName`    |
+| Remove environment       | `conda env remove --name envName`            |
