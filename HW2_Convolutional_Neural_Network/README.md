@@ -33,22 +33,32 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 - Implement and train a baseline CNN on the **original CIFAR-10 dataset** (with standard normalization only, without data augmentation or added noise).
 - Show your (1) network architecture, (2) learning curve (loss and accuracy), and (3) accuracy on the test set.
 
-##
+## 2-2
 
 - Create two corrupted test sets from the original test data:
-  (1) Gaussian Noise: Add zero-mean Gaussian noise (𝜎 ≈ 0.08 ∼ 0.1).
-  (2) Gaussian Blur: Apply a Gaussian filter (𝜎 ≈ 0.8 ∼ 1.0).
+
+  (1) Gaussian Noise: Add zero-mean Gaussian noise (\(\sigma \approx 0.08 \sim 0.1\)).
+
+  (2) Gaussian Blur: Apply a Gaussian filter (\(\sigma \approx 0.8 \sim 1.0\)).
+
 - Evaluate your Baseline CNN on both corrupted test sets. Report the test accuracies and discuss why performance drops.
 
 ##
 
 - Train two additional models:
+  
   (1) L2 Regularization: Baseline CNN with weight decay / L2 penalty.
+
   (2) Data Augmentation: Baseline CNN trained with augmentations (e.g., random crop, horizontal flip, or noise). 
+
 - Provide a summary table comparing the test accuracies (Clean, Noise, and Blur) of:
+
   (1) Baseline CNN
+
   (2) L2 Regularization
+
   (3) Data Augmentation 
+
 - Discuss the results (e.g., why certain strategies improve or degrade robustness under different corruptions). 
 
 ##
