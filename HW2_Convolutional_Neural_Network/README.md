@@ -24,24 +24,30 @@ mnist = tf.keras.dataset.mnist
 
 Please implement a CNN for image recognition using the MNIST dataset. You have to design your network architecture and **analyze** the effect of different stride size and filter size. Also, plot the learning curve, accuracy of training and test sets, and distributions of weights and biases. (The figures shown below are only for example, you should get the results by yourself.)
 
-<p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+<p align="center">
+  <img src="fig.2.png" alt="fig2_reference" width="50%">
+  <br>
+  <em>Figure 2: Accuracy, learning curve, and histograms of layers</em>
 </p>
 
 ## 1-2
 
 Show some examples of correctly classified and miss-classified images and **discuss your results**.
 
-<p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+<p align="center">
+  <img src="fig.3.png" alt="fig3_reference" width="50%">
+  <br>
+  <em>Figure 3: Examples of correctly classified and miss-classified images</em>
 </p>
 
 ## 1-3
 
 Following 1-2, observe the feature maps from different convolutional layers and describe how a feature map changes with increasing depth.
 
-<p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+<p align="center">
+  <img src="fig.4.png" alt="fig4_reference" width="50%">
+  <br>
+  <em>Figure 4: Examples of feature maps</em>
 </p>
 
 ## 1-4
@@ -52,8 +58,10 @@ $$
 E = -\frac{1}{N}\sum_{n=1}^{N}\sum_{k=1}^{K} y_{nk}\ln t_{nk}+ \alpha \lVert \omega \rVert_2^2
 $$
 
-<p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+<p align="center">
+  <img src="fig.5.png" alt="fig5_reference" width="50%">
+  <br>
+  <em>Figure 5: Results of a CNN with L2 regularization</em>
 </p>
 
 # 2. Robustness and Interpretability on CIFAR-10
@@ -101,8 +109,10 @@ The link where you can get the CIFAR-10 dataset is below and please refer to the
 - Implement Grad-CAM on the last convolutional layer. 
 - Pick at least 2 test samples and visualize a side-by-side comparison for both Baseline and Data Augmented models (including Original Input, Clean+CAM, Noise+CAM, and Blur+CAM):
 
-<p align="left">
-  <img src="Q1_ref.png" alt="Q1_reference" width="50%">
+<p align="center">
+  <img src="fig.6.png" alt="fig6_reference" width="50%">
+  <br>
+  <em>Figure 6: Example of Grad-CAM comparison across corruptions and models</em>
 </p>
 
 - Discuss whether data augmentation helps the model maintain focus on the target object under noise and blur.
