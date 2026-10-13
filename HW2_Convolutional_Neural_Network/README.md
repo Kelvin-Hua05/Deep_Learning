@@ -4,7 +4,7 @@ You are allowed to use **high-level** API, such as PyTorch, TensorFlow / Keras, 
 
 In this exercise, you will construct a convolutional neural network (CNN) for image recognition using the MNIST dataset. This dataset is a subset of a larger set available from NIST. The MNIST dataset contains a total of 70,000 images of handwritten digits from 0 to 9 with corresponding labels, of which 55,000 examples are in the training set, 5,000 in the validation set, and 10,000 in the test set. The digits have been size-normalized and centered in a fixed- size image, so you don’t need to do any preprocessing to the images. The picture below is an example of the MNIST data:  
 
-<p align="left">
+<p align="center">
   <img src="fig.1.png" alt="fig1_reference" width="50%">
   <br>
   <em>Figure 1: Examples of handwritten digits</em>
