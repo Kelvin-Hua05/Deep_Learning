@@ -49,10 +49,9 @@ For Section 2 and Section 3, please train both models using **character-level to
 > **Figure 1:** Example of last-layer causal self-attention heatmap (Query vs. Key tokens).
 > *(Example prompt: `ROMEO:\nO. speak again.`; x-axis = Key Positions, y-axis = Query Positions, color = Attention Weight from 0.0 to 1.0, lower-triangular structure.)*
 
-**Discuss:**
-
-1. Explain the causal mask pattern (lower-triangular structure).
-2. Observe whether certain tokens (e.g., punctuation marks, character names, or newline tokens) exhibit specific attention patterns.
+- Discuss:
+  1. Explain the causal mask pattern (lower-triangular structure).
+  2. Observe whether certain tokens (e.g., punctuation marks, character names, or newline tokens) exhibit specific attention patterns.
 
 ## 3-2. Prompting & temperature-controlled sampling
 
