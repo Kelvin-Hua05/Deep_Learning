@@ -55,8 +55,11 @@ For Section 2 and Section 3, please train both models using **character-level to
 - Extract the attention weights from the last multi-head self-attention layer of your trained Transformer for a prompt sequence (e.g., length 15 ~ 25 tokens).
 - Plot the **2D attention heatmap** (Query positions vs. Key positions) averaged across heads (or display individual heads).
 
-> **Figure 1:** Example of last-layer causal self-attention heatmap (Query vs. Key tokens).
-> *(Example prompt: `ROMEO:\nO. speak again.`; x-axis = Key Positions, y-axis = Query Positions, color = Attention Weight from 0.0 to 1.0, lower-triangular structure.)*
+<p align="center">
+  <img src="fig.1.png" alt="fig1_reference" width="50%">
+  <br>
+  <em>Figure 1: Example of last-layer causal self-attention heatmap (Query vs. Key tokens) </em>
+</p>
 
 - Discuss:
 
