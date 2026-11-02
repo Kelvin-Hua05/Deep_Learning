@@ -70,6 +70,6 @@ For Section 2 and Section 3, please train both models using **character-level to
 
 # Recommended libraries
 
-- PyTorch / TensorFlow
+- **PyTorch** / **TensorFlow**
 - `tiktoken` / `tokenizers` (Hugging Face)
-- Matplotlib / Seaborn (for loss curves and attention heatmaps)
+- **Matplotlib** / **Seaborn** (for loss curves and attention heatmaps)
