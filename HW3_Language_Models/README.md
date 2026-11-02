@@ -72,7 +72,7 @@ For Section 2 and Section 3, please train both models using **character-level to
 - Prime your models with a prompt related to the dataset (e.g., `"ROMEO: "` or `"JULIET: "`) and generate 10 ~ 15 lines of text.
 - Implement temperature-scaled sampling for next-token probabilities:
 
-  $$P(x_t = i) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}$$
+$$P(x_t = i) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}$$
 
 - Compare the text generated under different temperatures:
 
