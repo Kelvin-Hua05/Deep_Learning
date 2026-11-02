@@ -1,7 +1,4 @@
-- You are allowed to use high-level APIs, such as PyTorch, TensorFlow / Keras, etc.
-- Put your source code and the report with results into a compressed file `HW3_StudentID_Name.zip` and submit through e3.
-
----
+- You are allowed to use *high-level* APIs, such as PyTorch, TensorFlow / Keras, etc.
 
 # 1. Dataset & tokenization
 
@@ -9,19 +6,15 @@ In this homework, you will train autoregressive language models on the provided 
 
 ## 1-1. Character-level vs. subword (BPE) tokenization
 
-- **Character-level:** Build a character vocabulary from the dataset (vocab size ≈ 65 ~ 80).
-- **Subword-level:** Train or load a byte-pair encoding (BPE) tokenizer with a small vocabulary size (e.g., 1000 ~ 2000) using libraries such as `tiktoken` or Hugging Face `tokenizers`.
+- Character-level: Build a character vocabulary from the dataset (vocab size ≈ 65 ~ 80).
+- Subword-level: Train or load a byte-pair encoding (BPE) tokenizer with a small vocabulary size (e.g., 1000 ~ 2000) using libraries such as `tiktoken` or Hugging Face `tokenizers`.
 
-**Deliverables:**
-
+- Deliverables:
 1. Report the vocabulary size and the total number of tokens for both tokenizers on `shakespeare_train.txt`.
 2. Calculate the sequence compression ratio:
-
    $$\text{Compression Ratio} = \frac{\text{Number of Characters}}{\text{Number of BPE Tokens}}$$
 
 3. Briefly discuss the trade-offs between character-level and subword-level tokenization.
-
----
 
 # 2. Language modeling: LSTM vs. causal Transformer
 
@@ -29,7 +22,7 @@ Train autoregressive language models to predict the next token given preceding c
 
 $$\mathcal{L}(\mathbf{w}) = -\frac{1}{T}\sum_{t=1}^{T} \log P(x_t \mid x_1, \ldots, x_{t-1}; \mathbf{w})$$
 
-For Section 2 and Section 3, please train both models using character-level tokens (or subword tokens).
+For Section 2 and Section 3, please train both models using *character-level tokens* (or subword tokens).
 
 ## 2-1. LSTM language model
 
