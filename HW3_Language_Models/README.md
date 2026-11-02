@@ -1,4 +1,4 @@
-- You are allowed to use *high-level* APIs, such as PyTorch, TensorFlow / Keras, etc.
+- You are allowed to use **high-level** APIs, such as PyTorch, TensorFlow / Keras, etc.
 
 # 1. Dataset & tokenization
 
@@ -28,8 +28,7 @@ For Section 2 and Section 3, please train both models using *character-level tok
 
 - Implement an LSTM language model (token embedding → LSTM layer(s) → linear projection).
 
-**Deliverables:**
-
+- Deliverables:
 1. Describe your network architecture (embedding dimension, hidden state size, number of layers, dropout rate, and optimizer).
 2. Plot the **learning curves** (Training and Validation Loss vs. Epoch).
 3. Select 5 breakpoints / epochs during training, feed an initial seed character/word, and display the generated text to demonstrate how the model progressively learns language structure.
