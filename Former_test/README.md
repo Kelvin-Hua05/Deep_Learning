@@ -128,6 +128,11 @@ Zero padding lets us control the kernel width and the output size independently.
 - **Same convolution:** zero padding keeps the output the same size as the input.
 - **Full convolution:** the filter and input overlap at every possible position (padding of kernel size − 1); the output is larger than the input.
 
+<p align="center">
+  <img src="fig.1.png" alt="fig1_reference" width="75%">
+  <br>
+</p>
+
 (Drawing: the standard valid / same / full convolution figure, with the blue input, dashed padding, and green output grid.)
 
 ---
@@ -142,6 +147,11 @@ Back-propagation refers only to the method for computing the gradient (efficient
 ### 4b) (8 pts) Fill out the blanks (circled numbers) in the paragraph about the computational graph.
 
 The cost is `J = J_MLE + λ(Σ (W⁽¹⁾_ij)² + Σ (W⁽²⁾_ij)²)`, and the graph is `X → matmul(W⁽¹⁾) → U⁽¹⁾ → relu → H → matmul(W⁽²⁾) → U⁽²⁾ → cross_entropy(y) → J_MLE`, plus the weight-decay branch. All answers must be a matrix, vector, or scalar.
+
+<p align="center">
+  <img src="fig.2.png" alt="fig2_reference" width="75%">
+  <br>
+</p>
 
 **Answer:**
 
@@ -186,6 +196,11 @@ Adam ("adaptive moments") is an adaptive learning rate algorithm that combines R
 
 Network: input `x₁ = 1, x₂ = 2`; three ReLU hidden units; one output unit.
 
+<p align="center">
+  <img src="fig.3.png" alt="fig3_reference" width="75%">
+  <br>
+</p>
+
 | Weight | Initial value | Connection |
 |---|---|---|
 | w₁ | 2 | x₁ → h₁ |
@@ -229,6 +244,11 @@ ReLU derivative: `f′(x) = 1 if x > 0, else 0`.
 
 ### 5a) (4 pts) Draw the unfolded graphs of the following two RNNs.
 
+<p align="center">
+  <img src="fig.4.png" alt="fig4_reference" width="75%">
+  <br>
+</p>
+
 Left RNN: recurrence from `h` to `h` (weight W). Right RNN: recurrence from the output `o` to `h` (weight W). Both have `x → h` (U), `h → o` (V), and `o, y → L`.
 
 **Answer:**
@@ -238,7 +258,17 @@ Left RNN: recurrence from `h` to `h` (weight W). Right RNN: recurrence from the 
 
 In both graphs U, V, W are shared across all time steps.
 
+<p align="center">
+  <img src="fig.5.png" alt="fig5_reference" width="75%">
+  <br>
+</p>
+
 ### 5b) (8 pts) Derive the mathematical expression for both the internal state s⁽ᵗ⁾ and the current hidden layer h⁽ᵗ⁾ of the LSTM cell.
+
+<p align="center">
+  <img src="fig.6.png" alt="fig6_reference" width="75%">
+  <br>
+</p>
 
 Notation: forget gate (bᶠ, Uᶠ, Wᶠ), input gate (bᵍ, Uᵍ, Wᵍ), output gate (bᵒ, Uᵒ, Wᵒ), cell input (b, U, W); activation σ(·); all variables are scalars.
 
@@ -252,6 +282,11 @@ q(t) = σ( bᵒ + Uᵒ·x(t) + Wᵒ·h(t-1) )          # output gate
 s(t) = f(t)·s(t-1) + g(t)·σ( b + U·x(t) + W·h(t-1) )     # internal state
 h(t) = tanh( s(t) ) · q(t)                                # hidden state
 ```
+
+<p align="center">
+  <img src="fig.7.png" alt="fig7_reference" width="75%">
+  <br>
+</p>
 
 > 註:標準 LSTM 的 cell input 通常使用 tanh,但題目指定 activation function 為 σ(·),所以這裡照題目用 σ。`h(t)` 的 `tanh(s(t))` 為標準形式。
 
